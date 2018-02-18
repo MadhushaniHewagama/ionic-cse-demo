@@ -10,7 +10,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Create student
+      Create new Student
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -19,18 +19,18 @@
 <ion-content padding>
   <form (ngSubmit)="submitStudent()">
     <ion-item>
-      <ion-label>Name</ion-label>
+      <ion-label>Name of the student</ion-label>
       <ion-input type="text" [(ngModel)]="student.name" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Address</ion-label>
+      <ion-label>Address of student</ion-label>
       <ion-input type="text" [(ngModel)]="student.address" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Age</ion-label>
+      <ion-label>Age in years</ion-label>
       <ion-input type="text" [(ngModel)]="student.age" name="name"></ion-input>
     </ion-item>
     <br/><br/>
-    <button ion-button type="submit" block>Add student</button>
+    <button ion-button type="submit" block>Add new student</button>
   </form>
 </ion-content>
